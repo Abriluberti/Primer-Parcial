@@ -7,7 +7,7 @@
 
 #ifndef INPUT_H_
 #define INPUT_H_
-/// @brief
+/// @brief ingreso un array de tipo de char
 ///
 /// @pre
 /// @post
@@ -15,7 +15,7 @@
 /// @param longitud
 /// @return
 int myGets(char *cadena, int longitud);
-/// @brief
+/// @brief ingreso un array de tipo int
 ///
 /// @pre
 /// @post
@@ -23,14 +23,14 @@ int myGets(char *cadena, int longitud);
 /// @param textoAMostrar
 /// @return
 int getInt(int *pResultado, char textoAMostrar[]);
-/// @brief
+/// @brief validacion del array char
 ///
 /// @pre
 /// @post
 /// @param cadena
 /// @return
 int esNumerica(char *cadena);
-/// @brief
+/// @brief ingreso un numero de tipo int con validacion
 ///
 /// @pre
 /// @post
@@ -43,7 +43,7 @@ int esNumerica(char *cadena);
 /// @return
 int utn_getInt(int *pResultado, char *mensaje, char *mensajeError, int minimo,
 		int maximo, int reintentos);
-/// @brief
+/// @brief  ingreso un numero de tipo float con validacion
 ///
 /// @pre
 /// @post
@@ -55,21 +55,21 @@ int utn_getInt(int *pResultado, char *mensaje, char *mensajeError, int minimo,
 /// @return
 int utn_getFloat(float *pResultado, char *mensaje, char *mensajeError,
 		float minimo, float maximo);
-/// @brief
+/// @brief ingreso un numero de tipo float
 ///
 /// @pre
 /// @post
 /// @param pResultado
 /// @return
 int getFloat(float *pResultado);
-/// @brief
+/// @brief valida el array recibido
 ///
 /// @pre
 /// @post
 /// @param stringRecibido
 /// @return
 int isValidTexto(char *stringRecibido);
-/// @brief
+/// @brief ingreso de un array y validacion
 ///
 /// @pre
 /// @post

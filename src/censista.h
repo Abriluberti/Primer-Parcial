@@ -13,8 +13,19 @@ typedef struct {
 	int edad;
 	char telefono[20];
 } censista;
-
+/// @brief inicializacion de lista censista
+///
+/// @pre
+/// @post
+/// @param listadoCensistas
 void inicializacionCensistas(censista *listadoCensistas);
+/// @brief listado de censistas harcodeados
+///
+/// @pre
+/// @post
+/// @param listaCensistas
+/// @param longitud
+/// @return
 int listadoDeCensistas(censista *listaCensistas, int longitud);
 
 #endif /* CENSISTA_H_ */
