@@ -7,6 +7,7 @@
 
 #ifndef VIVIENDA_H_
 #define VIVIENDA_H_
+#include "censista.h"
 
 typedef struct {
 	int idVivienda;
@@ -48,7 +49,8 @@ int tipoVivienda, int legajoCensista);
 /// @param listadoVivienda
 /// @param longitud
 /// @return
-int listarViviendass(vivienda *listadoVivienda, int longitud);
+int listarViviendass(vivienda *listadoVivienda, int longitud,
+		censista *listadoCensistas);
 /// @brief busca la posicion del id y la retorna
 ///
 /// @pre

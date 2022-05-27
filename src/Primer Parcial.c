@@ -210,7 +210,7 @@ int main(void) {
 				getInt(&tipoBusqueda, "\n1-Ordenar por calle.");
 
 				ordenarViviendas(listadoViviendas, longitud);
-				listarViviendass(listadoViviendas, longitud);
+				listarViviendass(listadoViviendas, longitud, listadoCensistas);
 
 				break;
 

@@ -10,6 +10,7 @@
 #include "input.h"
 #include <string.h>
 #include "vivienda.h"
+#include "censista.h"
 
 int inicializarVivienda(vivienda *listadoVivienda, int longitud) {
 	int i;
@@ -44,7 +45,8 @@ int cargarVivienda(vivienda *listadoVivienda, int longitud, int id,
 
 }
 
-int listarViviendass(vivienda *listadoVivienda, int longitud) {
+int listarViviendass(vivienda *listadoVivienda, int longitud,
+		censista *listadoCensistas) {
 	int i;
 	printf(
 			"\nlas viviendas son:\n"
@@ -57,6 +59,29 @@ int listarViviendass(vivienda *listadoVivienda, int longitud) {
 					listadoVivienda[i].cantidadHabitaciones,
 					listadoVivienda[i].tipoVivienda,
 					listadoVivienda[i].legajoCensista);
+			if (listadoVivienda[i].legajoCensista == 100) {
+				printf("%d \t %s\t\t\t %d \t\t\t%d \t\t%d \t\t%d\n",
+						listadoCensistas[0].legajoCensista,
+						listadoCensistas[0].nombre, listadoCensistas[0].edad,
+						listadoCensistas[0].telefono);
+
+			} else {
+				if (listadoVivienda[i].legajoCensista == 101) {
+					printf("%d \t %s\t\t\t %d \t\t\t%d \t\t%d \t\t%d\n",
+							listadoCensistas[1].legajoCensista,
+							listadoCensistas[1].nombre,
+							listadoCensistas[1].edad,
+							listadoCensistas[1].telefono);
+				} else {
+
+					printf("%d \t %s\t\t\t %d \t\t\t%d \t\t%d \t\t%d\n",
+							listadoCensistas[2].legajoCensista,
+							listadoCensistas[2].nombre,
+							listadoCensistas[2].edad,
+							listadoCensistas[2].telefono);
+
+				}
+			}
 		}
 
 	}
